@@ -1,0 +1,47 @@
+@import url('styles.css');
+*,
+*::before,
+*::after {
+  	box-sizing: border-box;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+body {
+    background: aliceblue;
+    overflow-x: hidden;
+}
+body > div {
+    margin:  0 auto;
+}
+
+canvas { 
+	display: inline-block; 
+	*display: inline; 
+	*zoom: 1; 
+}
+
+@media only screen and (device-width: 768px) {
+	
+	canvas{
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	canvas{
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	canvas{
+		margin-top: 40px;
+	}
+}
+
+canvas {
+    background-color: #fff;
+}

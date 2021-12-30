@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title> FLAPPY BIRD </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="64x64" href="favicon.png"> 
+	
+	<script src="js/modernizr.js"></script>
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flappyBird.css">
+
+</head>
+<body class="w3-display-container w3-green" style="height: 100vh;width:100vw;">
+
+    <div class="w3-bar-block w3-display-topmiddle w3-center" id="gameBody">
+        <h2 class="w3-bar-item w3-padding-top-24 w3-hide-small">Flappy Bird</h2>
+        <div class="w3-bar-item">
+            <canvas class="w3-border w3-light-card-1" id="myCanvas" width="288" height="512"></canvas>
+        </div>
+        <div class="w3-hide">
+            <audio src="sounds/fly.mp3" id="flyingSound"></audio>
+            <audio src="sounds/score.mp3" id="scoreSound"></audio>
+        </div>
+    </div>
+    
+    <div class="w3-display-bottommiddle w3-block w3-hide-large w3-hide-medium w3-green" id="mobileControl" style="display: none;">
+        <div class="w3-bar-block">
+            <div class="w3-bar-item w3-row w3-block w3-light-card-1">
+                <div class="w3-col w3-left" style="width: 50px;">
+                    <button class="w3-button w3-padding-large w3-transparent w3-hover-green w3-opacity-min w3-hover-opacity-off" id="toggleScreen">
+                        <i class="fa fa-desktop"></i>
+                    </button>
+                </div>
+                <div class="w3-col w3-right" style="width: 50px;">
+                    <button class="w3-button w3-padding-large w3-transparent w3-hover-green w3-opacity-min w3-hover-opacity-off" id="togglePlay">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                </div>
+                <div class="w3-rest w3-container">
+                    <button class="w3-button w3-padding-large w3-transparent w3-hover-green w3-border w3-round-large w3-block" id="toggleFly">
+                        <i class="fa fa-heart"></i>
+                    </button>
+                </div>
+                <div class="w3-clear"></div>
+            </div>
+        </div>
+    </div>
+	
+    
+	<!-- Show Toast Messages -->
+	<link rel="stylesheet" type="text/css" href="css/basic-toast.css">
+	<script type="text/javascript" src="js/basic-toast.js"></script>
+    <script src="js/helpers.js"></script>
+   	<script src="js/flappyBird.js"></script>
+
+</body>
+</html>
