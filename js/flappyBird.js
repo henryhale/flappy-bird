@@ -1,4 +1,4 @@
-/* Flappy Bird by Henry Harrison*/
+/* Flappy Bird by Henry Hale */
 
 // Toast Plugin
 var useToastText = false;
@@ -6,7 +6,7 @@ if (showToastFor) {
 	useToastText = true;
 	window.addEventListener("DOMContentLoaded", function () {
 		// Welcoming User
-		showToastFor('Flappy Bird by Henry Harrison');
+		showToastFor('Flappy Bird by Henry Hale');
 	}, false);
 }
 
